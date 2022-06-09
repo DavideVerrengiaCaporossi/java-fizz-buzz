@@ -3,15 +3,24 @@ package Jana60;
 public class javafizzbuzz {
 		public static void main(String[] args) {
 			
-				//creazione for che conti e stampi fino a 100
+				//creazione for 
 				for (int i = 1; i <= 100; i++) {
-					System.out.println( i );
+					
+					//creazione if in comune 3 e 5
+					if(i % 3 == 0 && i % 5 == 0) {
+					System.out.println("FizzBuzz");
+					
+					}
 					//creazione if se i e divisibile per 3 stampa fizz
-					if(i % 3 == 0) {
+					else if(i % 3 == 0) {
 					System.out.println("Fizz");
 					 }//creazione else if se i e divisibile per 5 stampa fizz
 					else if(i % 5 == 0) {
-						System.out.println("FizzBizz");
+						System.out.println("Buzz");
+					}
+					//else che mi stampa i numeri rimanenti
+					else {
+						System.out.println( i );
 					}
 	
 				}
